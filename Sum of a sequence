@@ -1,0 +1,11 @@
+public static class Kata
+{
+  public static int SequenceSum(int b, int e, int s)
+  {
+    int x = 0;
+        if (b > e) return 0;
+        for (; b <= e; b += s)
+            x += b;
+        return x;
+  }
+}
