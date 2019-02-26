@@ -1,4 +1,4 @@
 # CodeWars
 Programs for CodeWars
 
-This is backup of my programs, which I performed. 
+This is backup of programs, which I performed. 
