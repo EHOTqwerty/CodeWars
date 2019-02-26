@@ -1,28 +1,50 @@
 using System;
-
-namespace MyTestProject
+public class Hist
 {
-	class MainClass
-	{
-		static public int SizeInt(int l)
-		{
-			 return l = l.ToString ().Length;
+	static public string Give(int l, string ch, string k)
+	{		
+		string s = null;
+		if (l > 0) 
+		{	
+			if (k != null)
+			if (k.Length > 0)
+				s += "\r";
+			s += ch + "  " + l.ToString ();
+			for (int i = 0; i < 6 - l.ToString ().Length; i++)
+				s += " ";
+			for (int i = 0; i < l; i++)
+				s += "*";
+			return s;
 		}
-		public static void Main (string[] args)
+		return s;
+	}
+	public static string hist(string o)
+	{
+		char[] c = o.ToCharArray ();
+		int u = 0, w = 0, x = 0, z = 0;
+		for (int i = 0; i < c.Length; i++) 
 		{
-			string o = "uuaaaxbbbbyyhwawiwjjjwwxym";
-			char c = o.ToCharArray ();
-			object a = { u = 0, w = 0, x = 0, z = 0};
-			for (int i = 0; i < c.Length; i++) 
+			switch (c [i]) 
 			{
-				switch (c [i]) 
-				{
-				case 'u':
-					{
-						a.
-					}
-				}
+			case 'u':
+				u++;
+				break;
+			case 'w':
+				w++;
+				break;
+			case 'x':
+				x++;
+				break;
+			case 'z':
+				z++;
+				break;
 			}
 		}
+		o = null;
+		o += Give (u, "u", o);
+		o += Give (w, "w", o); 
+		o += Give (x, "x", o); 
+		o += Give (z, "z", o);
+		return o;
 	}
 }
