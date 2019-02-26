@@ -1,0 +1,16 @@
+public static class Kata
+{
+  public static string Maskify(string cc)
+  {
+			char[] ca = cc.ToCharArray ();
+			for (int i = ca.Length; i >= 0; i--) 
+			{
+				if (i < ca.Length - 4) 
+				{
+					ca[i] = '#';
+				}
+			}
+			cc = new string(ca);
+			return cc;
+  }
+}
