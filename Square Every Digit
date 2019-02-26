@@ -1,0 +1,42 @@
+using System;
+
+public class Kata
+{
+  public static int SquareDigits(int a)
+  {
+        int x = 0, b = 0, need = 0;
+        while (a != 0)
+        {
+            b = a % 10;
+            a /= 10;
+            b *= b;
+            if (b == 0)
+            { need++; }
+            else
+            {
+                b *= PlusTen(need);
+                x += b * PlusTen(SizeInt(x));
+            }
+        }
+        return x;
+
+        int SizeInt(int d)
+        {
+            int y = 0;
+            while (d != 0)
+            {
+                y++;
+                d /= 10;
+            }
+            return y;
+        }
+
+        int PlusTen(int d)
+        {
+            int l = 1;
+            for (int i = 0; i < d; i++)
+                l *= 10;
+            return l;
+        }
+  }
+}
