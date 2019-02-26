@@ -1,0 +1,31 @@
+using System;
+
+public class Kata
+{
+  public static int DuplicateCount(string inp)
+  {
+    int[] alf = new int[36];
+        foreach (char s in inp)
+        {
+            if ((int)s > 64 && (int)s < 91)
+            {
+                alf[(int)s - 64]++;
+            } else
+            if ((int)s > 96 && (int)s < 123)
+            {
+               alf[(int)s - 96]++;
+            }
+            if ((int)s > 47 && (int)s < 58)
+            {
+                alf[(int)s - 22]++;
+            }
+        }
+        int x = 0;
+        for (int i = 0; i < 36; i++)
+        {
+            if (alf[i] > 1) x++;
+        }
+
+        return x;
+  }
+}
