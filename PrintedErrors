@@ -1,0 +1,28 @@
+using System;
+
+namespace MyTestProject
+{
+	class MainClass
+	{
+		static public int SizeInt(int l)
+		{
+			 return l = l.ToString ().Length;
+		}
+		public static void Main (string[] args)
+		{
+			string o = "uuaaaxbbbbyyhwawiwjjjwwxym";
+			char c = o.ToCharArray ();
+			object a = { u = 0, w = 0, x = 0, z = 0};
+			for (int i = 0; i < c.Length; i++) 
+			{
+				switch (c [i]) 
+				{
+				case 'u':
+					{
+						a.
+					}
+				}
+			}
+		}
+	}
+}
