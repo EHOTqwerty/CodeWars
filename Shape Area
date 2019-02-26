@@ -4,15 +4,16 @@ namespace myjinxin
     
     public class Kata
     {
-        public int ShapeArea(int n){
-          n = n * 2 - 1;
-          int s =n;
-          while(n != 1)
+          public int ShapeArea(int n)
           {
-            s += (n - 2) * 2;
-            n -= 2;
+                n = n * 2 - 1;
+                int s =n;
+                while(n != 1)
+                {
+                  s += (n - 2) * 2;
+                  n -= 2;
+                }
+                return s;
           }
-          return s;
-        }
     }
 }
