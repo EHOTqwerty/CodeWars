@@ -1,0 +1,14 @@
+using System;
+
+public static class Kata
+{
+  public static string Disemvowel(string att)
+  {
+    string[] nope = { "a", "e", "i", "o", "u", "A", "E", "I", "O", "U" };
+    foreach (string c in nope)
+    {
+      att = att.Replace(c, string.Empty);
+    }
+    return att;
+  }
+}
