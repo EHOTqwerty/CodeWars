@@ -1,0 +1,20 @@
+public static class Kata
+{
+  public static string AlphabetPosition(string inp)
+  {
+    string x = "";
+        foreach (char s in inp)
+        {
+            if ((int)s > 64 && (int)s < 91)
+            {
+                x += ((int)s - 64)+ " ";
+            } else
+            if ((int)s > 96 && (int)s < 123)
+            {
+                x += ((int)s - 96) + " ";
+            }
+        }
+        x = x.Trim();
+        return x;
+  }
+}
