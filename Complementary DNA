@@ -1,0 +1,19 @@
+public class DnaStrand 
+    {
+        public static string MakeComplement(string inp)
+        {
+            string inv_dna = "";
+        foreach (char s in inp)
+        {
+            if (s == 'A')
+                inv_dna += 'T';
+            if (s == 'T')
+                inv_dna += 'A';
+            if (s == 'C')
+                inv_dna += 'G';
+            if (s == 'G')
+                inv_dna += 'C';
+        }
+        return inv_dna;
+        }
+    }
