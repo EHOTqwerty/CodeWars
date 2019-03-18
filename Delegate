@@ -1,0 +1,32 @@
+using System;
+
+namespace Delegate
+{
+	class MainClass
+	{
+		delegate void Message();
+
+		public static void Main (string[] args)
+		{
+			Message m;
+
+			if (DateTime.Now.Hour <= 12) {
+				m = Hi;
+			} else {
+				m = By;
+			}
+			m ();
+
+		}
+
+		private static void Hi()
+		{
+			Console.WriteLine ("Hellow");
+		}
+
+		private static void By()
+		{
+			Console.WriteLine ("Goodbye");
+		}
+	}
+}
