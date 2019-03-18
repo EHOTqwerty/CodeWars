@@ -1,0 +1,31 @@
+using System;
+
+namespace Delegate_1
+{
+	class MainClass
+	{
+		delegate int Action(int x, int y);
+
+		public static void Main (string[] args)
+		{
+			Action act;
+			act = Substraction;
+			int result = act (123, 37);
+			Console.WriteLine ($"123 - 37 = {result}");
+
+			act = Addition;
+			result = act (13, 54);
+			Console.WriteLine ($"12 + 54 = {result}");
+		}
+
+		private static int Addition(int a, int b)
+		{
+			return a + b;
+		}
+
+		private static int Substraction(int a, int b)
+		{
+			return a - b;
+		}
+	}
+}
