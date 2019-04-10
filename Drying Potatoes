@@ -10,8 +10,8 @@ namespace Drying_Potatoes
     {
         static void Main(string[] args)
         {
-            bool f = DryPotatoes(99, 100, 98) == 50 ? true : false;
-            Console.WriteLine(f);
+            bool x = DryPotatoes(99, 100, 98) == 50 ? true : false;
+            Console.WriteLine(x);
             Console.ReadKey();
         }
 
