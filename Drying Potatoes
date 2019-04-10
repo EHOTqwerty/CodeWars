@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Drying_Potatoes
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool f = DryPotatoes(99, 100, 98) == 50 ? true : false;
+            Console.WriteLine(f);
+            Console.ReadKey();
+        }
+
+        static int DryPotatoes(int p0, int w0, int p1)
+        {
+            return w0 * (100 - p0) / (100 - p1);
+        }
+    }
+}
