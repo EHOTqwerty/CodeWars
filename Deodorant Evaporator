@@ -1,0 +1,10 @@
+public class Evaporator { 
+  
+  public static int evaporator(double content, double evap_per_day, double threshold) {
+            double start_content = content;
+            int answer = 0;
+            while (start_content / content > threshold / 100)
+            { answer++; start_content = start_content * (1 - evap_per_day / 100); }
+            return answer;
+  }
+}
