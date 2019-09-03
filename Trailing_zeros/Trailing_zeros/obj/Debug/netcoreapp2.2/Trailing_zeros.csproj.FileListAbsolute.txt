@@ -1,0 +1,11 @@
+D:\Projects\Trailing_zeros\bin\Debug\netcoreapp2.2\Trailing_zeros.deps.json
+D:\Projects\Trailing_zeros\bin\Debug\netcoreapp2.2\Trailing_zeros.runtimeconfig.json
+D:\Projects\Trailing_zeros\bin\Debug\netcoreapp2.2\Trailing_zeros.runtimeconfig.dev.json
+D:\Projects\Trailing_zeros\bin\Debug\netcoreapp2.2\Trailing_zeros.dll
+D:\Projects\Trailing_zeros\bin\Debug\netcoreapp2.2\Trailing_zeros.pdb
+D:\Projects\Trailing_zeros\obj\Debug\netcoreapp2.2\Trailing_zeros.csprojAssemblyReference.cache
+D:\Projects\Trailing_zeros\obj\Debug\netcoreapp2.2\Trailing_zeros.csproj.CoreCompileInputs.cache
+D:\Projects\Trailing_zeros\obj\Debug\netcoreapp2.2\Trailing_zeros.AssemblyInfoInputs.cache
+D:\Projects\Trailing_zeros\obj\Debug\netcoreapp2.2\Trailing_zeros.AssemblyInfo.cs
+D:\Projects\Trailing_zeros\obj\Debug\netcoreapp2.2\Trailing_zeros.dll
+D:\Projects\Trailing_zeros\obj\Debug\netcoreapp2.2\Trailing_zeros.pdb
